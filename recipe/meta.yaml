@@ -13,7 +13,6 @@ build:
   noarch: python
   number: 0
   script:
-    - rm -rf proplot/fonts
     - "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
