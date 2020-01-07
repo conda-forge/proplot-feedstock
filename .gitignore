@@ -1,3 +1,4 @@
 *.pyc
+.vimsession
 
 build_artifacts
