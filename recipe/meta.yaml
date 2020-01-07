@@ -17,15 +17,14 @@ build:
 
 requirements:
   host:
-    - python >=3
+    - python >=3.6
     - pip
     - setuptools_scm
     - setuptools_scm_git_archive
     - setuptools >=30.3.0
   run:
-    - python >=3
+    - python >=3.6
     - matplotlib-base
-    - lxml
     - pyyaml
 
 test:
