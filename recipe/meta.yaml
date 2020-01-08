@@ -1,5 +1,5 @@
 {% set name = "proplot" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c72601ee90c9ea9feb44576069a7177efb2a84f1fdccc91d1795d60c38e74c34
+  sha256: 94cfbc4f29091810975b571a39c61b7e12de220d4783cf57a8fcfbeb29892220
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
     - "{{ PYTHON }} -m pip install . -vv"
 
@@ -25,7 +25,6 @@ requirements:
   run:
     - python >=3.6
     - matplotlib
-    - pyyaml
 
 test:
   imports:
