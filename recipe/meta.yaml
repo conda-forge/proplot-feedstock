@@ -1,5 +1,5 @@
 {% set name = "proplot" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1b087aaf9672ec2642d3c7bedd2a7b735dc3dddb8700320aef48f2efb79b6bbc
+  sha256: 0c4afc93fa2f3b9798898a1933477b3b44a63f1a3b46d17b74c7634e5b5f6a0e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script:
-    - "{{ PYTHON }} -m pip install . -vv"
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,8 +35,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'A comprehensive, easy-to-use matplotlib wrapper for making beautiful, publication-quality graphics.'
-  dev_url:  https://github.com/lukelbd/proplot
+  summary: A comprehensive, easy-to-use matplotlib wrapper for making beautiful, publication-quality graphics.
+  dev_url: https://github.com/lukelbd/proplot
 
 extra:
   recipe-maintainers:
