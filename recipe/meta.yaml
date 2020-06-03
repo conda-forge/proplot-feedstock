@@ -1,5 +1,5 @@
 {% set name = "proplot" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: edd0b91bdb864b4fd086b958d7f48995cf9f3c6f877e340c36b2e0eedb7be206
+  sha256: 7595fe8d785ddc2d43e8c6c055cca441650a5d1eac4c9d15c496574479c7d6f5
 
 build:
   noarch: python
