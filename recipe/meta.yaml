@@ -24,7 +24,7 @@ requirements:
     - setuptools >=30.3.0
   run:
     - python >=3.6
-    - matplotlib-base <3.5.0a0
+    - matplotlib-base 
     - setuptools
 
 test:
